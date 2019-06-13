@@ -92,13 +92,12 @@ def samples(sample):
 
     # Sort by sample
     sample_data.sort_values(by=sample, ascending=False, inplace=True)
-    sample_top_ten= sample_data[0:10]
 
     # Format the data to send as json
     data = {
-        "otu_ids": sample_top_ten.otu_id.values.tolist(),
-        "sample_values": sample_top_ten[sample].values.tolist(),
-        "otu_labels": sample_top_ten.otu_label.tolist(),
+        "otu_ids": sample_data.otu_id.values.tolist(),
+        "sample_values": sample_data[sample].values.tolist(),
+        "otu_labels": sample_data.otu_label.tolist(),
     }
     return jsonify(data)
 
