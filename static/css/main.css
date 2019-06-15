@@ -1,0 +1,63 @@
+.container-responsive{
+    margin: auto;
+    width: 95%;
+}
+
+.jumbotron{
+    text-align: center;
+    background: lightgray;
+}
+
+.jumbotron-header{
+    font-size: 4em;
+}
+
+.jumbotron-subtext{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.wfreq-meter{
+    height: 200px;
+    width: 200px;
+    background: white;
+}
+
+/*******************
+Metadata Box
+*******************/
+
+.sample-select{
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid black;
+}
+
+#sample-select-box{
+    min-width: 5em;
+    /* margin: 1em; */
+}
+
+.sample-metadata{
+    width: 100%;
+}
+
+
+table, thead, td{
+    border: 1px solid black;
+}
+
+thead{
+    background: blue;
+    color: white;
+}
+
+
+/*******************
+Chart
+*******************/
+#bubble{
+    /* margin: 2em; */
+    height:100%;
+    width:100%;
+}
